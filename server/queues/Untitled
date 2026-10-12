@@ -1,0 +1,7 @@
+		email_logo_url: orNull(values.emailLogoUrl),
+		email_logo_width: orNull(values.emailLogoWidth),
+		from_name: orNull(values.fromName),
+		from_email: values.fromEmail,
+		reply_to: orNull(values.replyTo),
+		footer_markdown: orNull(values.footerMarkdown),
+		archive_enabled: values.archiveEnabled,

@@ -1,0 +1,18 @@
+# Copy to .dev.vars for local development (wrangler/vite read it). In production: wrangler secret put <NAME>.
+
+# openssl rand -base64 48 (changing it later breaks unsubscribe links in emails already sent)
+SESSION_SECRET=
+# Only create the first admin, on the first login. After that, admins live in the database.
+ADMIN_EMAIL=
+ADMIN_PASSWORD=
+
+# Amazon SES (sending) and the SNS topic that posts events to /api/webhooks/ses
+SES_ACCESS_KEY_ID=
+SES_SECRET_ACCESS_KEY=
+SES_SNS_TOPIC_ARN=
+
+# Optional. SES_CONFIGURATION_SET and ALERT_FROM can also be set in Settings, which wins over these.
+# SES_CONFIGURATION_SET=newsletter
+# ALERT_FROM=Newsletter <alerts@mail.example.com>
+# ARCHIVE_HOSTS=news.example.com=weekly
+# EMAILABLE_API_KEY=
